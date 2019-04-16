@@ -16,8 +16,8 @@ class WebHookController extends Controller
 {
     public function handle(Request $request)
     {
-//        $path = config('gogs-webhook.webhook.path', base_path());
-        $path = base_path();
+        $path = config('gogs-webhook.webhook.path', base_path());
+//        $path = base_path();
         $token = config('gogs-webhook.webhook.token', false);
         if (!$token) {
             exit('error request');
