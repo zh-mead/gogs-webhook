@@ -23,8 +23,8 @@ class WebHookController extends Controller
             exit('error request');
         }
 
-//        $json = json_decode(file_get_contents('php://input'), true);
-
+        $json = json_decode(file_get_contents('php://input'), true);
+        exit($json);
 //        if (empty($json['token']) || $json['token'] !== $token) {
 //            exit('error request');
 //        }
