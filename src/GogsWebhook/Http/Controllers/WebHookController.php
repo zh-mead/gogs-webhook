@@ -22,14 +22,14 @@ class WebHookController extends Controller
             exit('error request');
         }
 
-//        $json = json_decode(file_get_contents('php://input'), true);
-//
-//        if (empty($json['token']) || $json['token'] !== $token) {
-//            exit('error request');
-//        }
+        $json = json_decode(file_get_contents('php://input'), true);
+
+        if (empty($json['token']) || $json['token'] !== $token) {
+            exit('error request');
+        }
 
         $cmd = "cd $path && git pull 2>&1";
-//        exit($cmd);
+        exit($cmd);
         $status = shell_exec($cmd);
         exit($status);
         print $status;

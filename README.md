@@ -5,7 +5,7 @@
 ## Installing
 
 ```shell
-$ composer require zhmead//gogs-webhook -vvv
+$ composer require zh-mead//gogs-webhook -vvv
 ```
 
 ## Usage
