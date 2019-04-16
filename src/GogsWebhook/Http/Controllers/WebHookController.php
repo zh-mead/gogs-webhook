@@ -22,9 +22,9 @@ class WebHookController extends Controller
         if (!$token) {
             exit('error request');
         }
-
-        $json = json_decode(file_get_contents('php://input'), true);
-        exit($json);
+        if ($request->header('X-Gogs-Signature', false) !== $token) {
+            exit('error request');
+        }
 //        if (empty($json['token']) || $json['token'] !== $token) {
 //            exit('error request');
 //        }
