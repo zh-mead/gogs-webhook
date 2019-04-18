@@ -21,9 +21,9 @@ $ php artisan vendor:publish --provider="ZhMead\GogsWebhook\GogsServiceProvider"
 > 默认秘钥为 APP_KEY
 
 * 配置 gogs webhook 钩子
-> 推送地址：http:[url]/gogs-webhook
-> 数据格式：application/json
-> 秘钥：自己配置（默认为app_key）
+> 推送地址：http:[url]/gogs-webhook</br>
+> 数据格式：application/json</br>
+> 秘钥：自己配置（默认为app_key）</br>
 
 ## 注意事项
 * 部署服务器的秘钥应为 项目执行的用户和用户组(这里以 用户:www 用户组：www 为例)
