@@ -30,7 +30,7 @@ class WebHookController extends Controller
 
     protected function verify_webhook($hmac_header)
     {
-        $token = config('gogs-webhook.webhook.app_secret', false);
+        $token = config('gogs-webhook.webhook.app_secret', '');
         $data = file_get_contents('php://input');
         if (!$token) {
             exit('token is not null!');

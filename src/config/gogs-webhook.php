@@ -8,6 +8,6 @@
 
 return [
     'webhook' => [
-        'app_secret' => env('WEBHOOK_APP_SECRET', ''),
+        'app_secret' => env('APP_KEY'),
     ]
 ];
