@@ -8,9 +8,6 @@
 
 return [
     'webhook' => [
-        'token' => '',
-        'path' => '',
-        'user' => '',
-        'user_group'=>''
+        'app_secret' => env('WEBHOOK_APP_SECRET', ''),
     ]
 ];
